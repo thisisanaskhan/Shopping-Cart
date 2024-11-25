@@ -13,19 +13,23 @@ const CartItem = ({item,itemIndex}) => {
   }
   return (
     <div>
+      <div>
         <div>
-            <img src='item.img'/>
+            <img src={item.img}/>
         </div>
         <div>
             <h1>{item.title}</h1>
             <h1>{item.description}</h1>
             <div>
             <h1>{item.price}</h1>
-            </div>
-        </div>
+            
+        
         <div onClick={removeCart}>
         <MdDelete />
         </div>
+        </div>
+       </div>
+      </div>
     </div>
   )
 };
